@@ -1,6 +1,8 @@
-//Creazone prompt per utente
-const km = parseFloat(prompt("Inserisci il numero di chilometri da percorrere"));
-const eta = parseInt(prompt("Inserisci l'età del passeggero"));
+//Creazione della funzione per il calcolo del biglietto del treno
+function calcoloBiglietto() {
+//Recupero dati
+const km = parseFloat(document.getElementById("km").value);
+const eta = parseInt(document.getElementById("età").value);
 
 //Variabile del prezzo per ogni chilometro
 const prezzoAlKm = 0.21;
@@ -30,4 +32,5 @@ if (isNaN(km) || isNaN(eta) || km <= 0 || eta <= 0) {
     console.log(`Età: ${eta}`);
     console.log(`Sconto: ${tipoSconto}`);
     console.log(`Prezzo finale: €${prezzoBiglietto.toFixed(2)}`);
+}
 }
