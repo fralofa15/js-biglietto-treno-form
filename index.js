@@ -24,4 +24,10 @@ if (isNaN(km) || isNaN(eta) || km <= 0 || eta <= 0) {
         prezzoBiglietto = prezzoBiglietto * 0.6;
         tipoSconto = "Sconto over 65 (40%)";
     }
+    
+    //Consol.log dei dati importanti
+    console.log(`Chilometri: ${km}`);
+    console.log(`Età: ${eta}`);
+    console.log(`Sconto: ${tipoSconto}`);
+    console.log(`Prezzo finale: €${prezzoBiglietto.toFixed(2)}`);
 }
