@@ -1,5 +1,6 @@
 //Creazione della funzione per il calcolo del biglietto del treno
-function calcoloBiglietto() {
+function calcoloBiglietto(event) {
+    event.preventDefault();
     //Recupero dati
     const km = parseFloat(document.getElementById("km").value);
     const eta = parseInt(document.getElementById("età").value);
